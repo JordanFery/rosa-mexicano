@@ -47,7 +47,7 @@ export default function Home() {
       image: "/burrito.webp",
       description: "",
       garnitures: [
-        { ingredient: "", prix: "23" },
+        { ingredient: "...", prix: "23" },
       ],
     },
     {
@@ -95,9 +95,7 @@ export default function Home() {
             style={{ objectPosition: "50% 30%" }}
             alt="hero section"
           />
-          {/* <div className="absolute inset-x-0 translate-y-1/2 bottom-0 pt-10 flex items-center justify-center">
-            <span className="bg-red-600 flex align-center items-center rounded-full px-4 h-20 text-white text-xl w-2/3">Happy hour du lundi au jeudi</span>
-          </div> */}
+          {/* Réservation */}
           <div className="absolute inset-x-0 translate-y-1/2 bottom-0 pt-10 flex items-center justify-center">
             <Link href="https://eatapp.co/fr/reserve/rosa-mexicano-1477-rue-sainte-catherine-est">
               <button
@@ -116,22 +114,6 @@ export default function Home() {
       </section>
 
 
-      {/* Réseaux sociaux */}
-      {/* <section className="mt-30">
-        <div className="flex w-full justify-around">
-          <Link target="_blank" href="https://www.instagram.com/rosaamexicano.mtl/">
-            <Instagram size={40} />
-          </Link>
-          <Link target="_blank" href="https://www.facebook.com/people/Restaurant-ROSA-Mexicano/61562724065284/">
-            <Facebook size={40} />
-          </Link>
-          <Link target="_blank" href="https://www.tiktok.com/discover/rosa-mexicano-montreal">
-            <FaTiktok size={40} />
-          </Link>
-        </div>
-      </section> */}
-
-
       <section className="mt-30">
         <div className="flex w-full justify-around">
           {/* Instagram - Rose Fluo */}
@@ -139,9 +121,9 @@ export default function Home() {
             target="_blank"
             href="https://www.instagram.com/rosaamexicano.mtl/"
             className="relative flex items-center justify-center p-2 rounded-full
-        text-pink-500
-        shadow-[0_0_10px_#ff4be3,0_0_20px_#ff4be3,0_0_40px_#ff4be3]
-        hover:shadow-[0_0_20px_#ff4be3,0_0_40px_#ff4be3,0_0_80px_#ff4be3]"
+            text-pink-500
+            shadow-[0_0_10px_#ff4be3,0_0_20px_#ff4be3,0_0_40px_#ff4be3]
+            hover:shadow-[0_0_20px_#ff4be3,0_0_40px_#ff4be3,0_0_80px_#ff4be3]"
           >
             <Instagram size={40} />
           </Link>
@@ -151,9 +133,9 @@ export default function Home() {
             target="_blank"
             href="https://www.facebook.com/people/Restaurant-ROSA-Mexicano/61562724065284/"
             className="relative flex items-center justify-center p-2 rounded-full
-        text-blue-400
-        shadow-[0_0_10px_#3b82f6,0_0_20px_#3b82f6,0_0_40px_#3b82f6]
-        hover:shadow-[0_0_20px_#3b82f6,0_0_40px_#3b82f6,0_0_80px_#3b82f6]"
+            text-blue-400
+            shadow-[0_0_10px_#3b82f6,0_0_20px_#3b82f6,0_0_40px_#3b82f6]
+            hover:shadow-[0_0_20px_#3b82f6,0_0_40px_#3b82f6,0_0_80px_#3b82f6]"
           >
             <Facebook size={40} />
           </Link>
@@ -163,9 +145,9 @@ export default function Home() {
             target="_blank"
             href="https://www.tiktok.com/discover/rosa-mexicano-montreal"
             className="relative flex items-center justify-center p-2 rounded-full
-        text-green-400
-        shadow-[0_0_10px_#4ade80,0_0_20px_#4ade80,0_0_40px_#4ade80]
-        hover:shadow-[0_0_20px_#4ade80,0_0_40px_#4ade80,0_0_80px_#4ade80]"
+            text-green-400
+            shadow-[0_0_10px_#4ade80,0_0_20px_#4ade80,0_0_40px_#4ade80]
+            hover:shadow-[0_0_20px_#4ade80,0_0_40px_#4ade80,0_0_80px_#4ade80]"
           >
             <FaTiktok size={40} />
           </Link>
@@ -173,20 +155,9 @@ export default function Home() {
       </section>
 
 
-      {/* Réservation */}
-      {/* <section>
-        <div>
-          <Link href="https://eatapp.co/fr/reserve/rosa-mexicano-1477-rue-sainte-catherine-est">
-            <button>
-              Réserver
-            </button>
-          </Link>
-        </div>
-      </section> */}
 
+      {/* Happy hour */}
       <section>
-
-
         <div className="pt-10 flex items-center justify-center">
           <span
             className=" text-center bg-pink-500 flex items-center justify-center rounded-full px-6 h-20 text-white text-xl w-2/3]"
@@ -195,8 +166,6 @@ export default function Home() {
             Happy hour du lundi au jeudi
           </span>
         </div>
-
-
       </section>
 
 
