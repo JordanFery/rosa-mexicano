@@ -99,14 +99,17 @@ export default function Home() {
             <span className="bg-red-600 flex align-center items-center rounded-full px-4 h-20 text-white text-xl w-2/3">Happy hour du lundi au jeudi</span>
           </div> */}
           <div className="absolute inset-x-0 translate-y-1/2 bottom-0 pt-10 flex items-center justify-center">
-            <span
-              className="relative text-center bg-pink-500 flex items-center justify-center rounded-full px-6 h-20 text-white text-xl w-2/3
-      
-      shadow-[0_0_8px_#ff4be3,0_0_20px_#ff4be3,0_0_40px_#ff4be3,0_0_60px_#ff4be3,inset_0_0_5px_#ff99f5]"
-              style={{ textShadow: "0 0 5px #ff4be3, 0 0 10px #ff4be3" }}
-            >
-              Happy hour du lundi au jeudi
-            </span>
+            <Link href="https://eatapp.co/fr/reserve/rosa-mexicano-1477-rue-sainte-catherine-est">
+              <button
+                className="text-white font-bold py-4 px-8 rounded-full w-60 h-20 max-w-xs text-center"
+                style={{
+                  backgroundColor: "#00E5CF", // turquoise vif mexicain
+                  boxShadow: "0 4px 14px rgba(0, 229, 207, 0.6)", // léger halo
+                }}
+              >
+                Réserver
+              </button>
+            </Link>
           </div>
 
         </div>
@@ -182,20 +185,20 @@ export default function Home() {
       </section> */}
 
       <section>
-        <div className="flex justify-center mt-6">
-          <Link href="https://eatapp.co/fr/reserve/rosa-mexicano-1477-rue-sainte-catherine-est">
-            <button
-              className="text-white font-bold py-4 px-8 rounded-full w-full max-w-xs text-center"
-              style={{
-                backgroundColor: "#00E5CF", // turquoise vif mexicain
-                boxShadow: "0 4px 14px rgba(0, 229, 207, 0.6)", // léger halo
-              }}
-            >
-              Réserver
-            </button>
-          </Link>
+
+
+        <div className="pt-10 flex items-center justify-center">
+          <span
+            className=" text-center bg-pink-500 flex items-center justify-center rounded-full px-6 h-20 text-white text-xl w-2/3]"
+            style={{ textShadow: "0 0 5px #ff4be3, 0 0 10px #ff4be3" }}
+          >
+            Happy hour du lundi au jeudi
+          </span>
         </div>
+
+
       </section>
+
 
 
 
@@ -204,7 +207,7 @@ export default function Home() {
       {/* Navigation dans les menus */}
       <section className="grid grid-cols-12">
 
-        <div className="flex mt-10 mb-10 overflow-x-auto col-start-2 col-end-12">
+        <div className="flex mt-10 mb-10 col-start-2 col-end-12">
           {navigations.map((navigaiton, index) => (
             <div key={index}>
               <Nav text={navigaiton.text} link={navigaiton.link} />
