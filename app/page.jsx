@@ -68,18 +68,21 @@ export default function Home() {
   ]
 
   const navigations = [
-    { text: "Boisson à la rosa", link: "#boissons" },
-    { text: "Plats principaux", link: "#plats" },
+    { text: "Boisson", link: "#boissons" },
+    // { text: "Boisson à la rosa", link: "#boissons" },
+    { text: "Plats", link: "#plats" },
+    // { text: "Plats principaux", link: "#plats" },
     { text: "Entrée", link: "#entree" },
-    { text: "Soupes", link: "#soupe" },
-    { text: "Hurgers Mexicains", link: "#hurger" },
-    { text: "Crevette", link: "#crevette" },
-    { text: "Boissons gazeuses", link: "#gaz" },
-    { text: "Café dessert", link: "#dessert" },
+    // { text: "Soupes", link: "#soupe" },
+    // { text: "Hurgers Mexicains", link: "#hurger" },
+    // { text: "Crevette", link: "#crevette" },
+    // { text: "Boissons gazeuses", link: "#gaz" },
+    { text: "Dessert", link: "#dessert" },
+    // { text: "Café dessert", link: "#dessert" },
   ]
 
   return (
-    <main>
+    <main className="bg-white">
 
       {/* Héro section */}
       <section className="grid grid-cols-12">
