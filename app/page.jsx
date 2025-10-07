@@ -14,7 +14,7 @@ export default function Home() {
   const recettes = [
     {
       title: "Tacos (3mcx)",
-      image: "/tacos.jpg",
+      image: "/tacos.webp",
       description: "Les meilleurs tacos à Montréal chez Rosa Mexicano",
       garnitures: [
         { ingredient: "Porc", prix: "16.50" },
@@ -44,7 +44,7 @@ export default function Home() {
     },
     {
       title: "Quesabirria X4",
-      image: "/burrito.webp",
+      image: "/quesabirria.webp",
       description: "",
       garnitures: [
         { ingredient: "...", prix: "23" },
@@ -52,7 +52,7 @@ export default function Home() {
     },
     {
       title: "Quesadilla",
-      image: "/quesadilla.jpg",
+      image: "/quesadilla.webp",
       description: "Tortilla de maïs faite à la main, farcie de fromage, oignon, coriandre et viande de votre choix. Accompagné de guacamole.",
       garnitures: [
         { ingredient: "Suadero", prix: "17.50" },
@@ -91,6 +91,7 @@ export default function Home() {
           <Image
             src="/hero.webp"
             fill
+            sizes="100vw"
             className="object-cover"
             style={{ objectPosition: "50% 30%" }}
             alt="hero section"
@@ -102,7 +103,6 @@ export default function Home() {
                 className="text-white font-bold py-4 px-8 rounded-full w-60 h-20 max-w-xs text-center"
                 style={{
                   backgroundColor: "#00E5CF", // turquoise vif mexicain
-                  boxShadow: "0 4px 14px rgba(0, 229, 207, 0.6)", // léger halo
                 }}
               >
                 Réserver
