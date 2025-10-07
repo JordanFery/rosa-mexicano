@@ -184,7 +184,7 @@ export default function Home() {
       {/* Navigation dans les menus */}
       <section className="grid grid-cols-12">
 
-        <div className="flex mt-10 mb-10 col-start-2 col-end-12">
+        <div className="flex mt-10 mb-10 overflow-hidden col-start-2 col-end-12">
           {navigations.map((navigaiton, index) => (
             <div key={index}>
               <Nav text={navigaiton.text} link={navigaiton.link} />
