@@ -1,4 +1,3 @@
-
 import Title from "./components/title"
 import Garniture from "./components/garniture"
 import Image from "next/image"
@@ -88,22 +87,32 @@ export default function Home() {
       <section className="grid grid-cols-12">
         <div className="relative w-full aspect-video col-start-1 col-end-13">
 
-          <Image
+          {/* <Image
             src="/hero.webp"
             fill
             sizes="100vw"
             className="object-cover"
             style={{ objectPosition: "50% 30%" }}
             alt="hero section"
+          /> */}
+          <Image
+            src="/hero.webp"
+            fill
+            sizes="100vw"
+            fetchPriority="high"
+            priority={true}
+            className="object-cover"
+            style={{ objectPosition: "50% 30%" }}
+            alt="hero section"
           />
+
+
           {/* Réservation */}
-          <div className="absolute inset-x-0 translate-y-1/2 bottom-0 pt-10 flex items-center justify-center">
+          <div className="absolute inset-x-0 translate-y-1/2 bottom-5 pt-10 flex items-center justify-center">
             <Link href="https://eatapp.co/fr/reserve/rosa-mexicano-1477-rue-sainte-catherine-est">
               <button
-                className="text-white font-bold py-4 px-8 rounded-full w-60 h-20 max-w-xs text-center"
-                style={{
-                  backgroundColor: "#00E5CF", // turquoise vif mexicain
-                }}
+                className="text-white bg-blue-800 font-bold py-4 px-8 rounded-full w-60 h-20 max-w-xs text-center"
+
               >
                 Réserver
               </button>
@@ -113,9 +122,19 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Happy hour */}
+      <section className="my-10">
+        <div className="pt-10 flex items-center justify-center">
+          <p className="text-pink-500 text-2xl font-bold">
 
-      <section className="mt-30">
-        <div className="flex w-full justify-around">
+            Happy hour du lundi au jeudi
+          </p>
+        </div>
+      </section>
+
+
+      <section className="grid grid-cols-12">
+        <div className="flex w-full justify-around col-start-4 col-end-10">
           {/* Instagram - Rose Fluo */}
           <Link
             target="_blank"
@@ -125,7 +144,7 @@ export default function Home() {
             shadow-[0_0_10px_#ff4be3,0_0_20px_#ff4be3,0_0_40px_#ff4be3]
             hover:shadow-[0_0_20px_#ff4be3,0_0_40px_#ff4be3,0_0_80px_#ff4be3]"
           >
-            <Instagram size={40} />
+            <Instagram size={20} />
           </Link>
 
           {/* Facebook - Bleu Électrique */}
@@ -137,7 +156,7 @@ export default function Home() {
             shadow-[0_0_10px_#3b82f6,0_0_20px_#3b82f6,0_0_40px_#3b82f6]
             hover:shadow-[0_0_20px_#3b82f6,0_0_40px_#3b82f6,0_0_80px_#3b82f6]"
           >
-            <Facebook size={40} />
+            <Facebook size={20} />
           </Link>
 
           {/* TikTok - Vert Lime */}
@@ -149,24 +168,13 @@ export default function Home() {
             shadow-[0_0_10px_#4ade80,0_0_20px_#4ade80,0_0_40px_#4ade80]
             hover:shadow-[0_0_20px_#4ade80,0_0_40px_#4ade80,0_0_80px_#4ade80]"
           >
-            <FaTiktok size={40} />
+            <FaTiktok size={20} />
           </Link>
         </div>
       </section>
 
 
 
-      {/* Happy hour */}
-      <section>
-        <div className="pt-10 flex items-center justify-center">
-          <span
-            className=" text-center bg-pink-500 flex items-center justify-center rounded-full px-6 h-20 text-white text-xl w-2/3]"
-            style={{ textShadow: "0 0 5px #ff4be3, 0 0 10px #ff4be3" }}
-          >
-            Happy hour du lundi au jeudi
-          </span>
-        </div>
-      </section>
 
 
 
@@ -203,6 +211,7 @@ export default function Home() {
                 src={recette.image}
                 alt={recette.title}
                 fill
+                sizes="100vw"
                 className="object-cover"
                 priority={index === 0}
               />
