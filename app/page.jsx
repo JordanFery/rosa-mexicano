@@ -208,7 +208,7 @@ export default function Home() {
               />
             </div>
           )}
-          <p className="col-start-2 col-end-12 mt-4 text-xl font-semibold">
+          <p className="col-start-2 col-end-12 mt-4 text-xl text-zinc-800 font-semibold">
             {recette.description}
           </p>
 
