@@ -111,8 +111,7 @@ export default function Home() {
           <div className="absolute inset-x-0 translate-y-1/2 bottom-5 pt-10 flex items-center justify-center">
             <Link href="https://eatapp.co/fr/reserve/rosa-mexicano-1477-rue-sainte-catherine-est">
               <button
-                className="text-white bg-blue-800 font-bold py-4 px-8 rounded-full w-60 h-20 max-w-xs text-center"
-
+                className="text-white text-xl bg-[#00B8D9] font-bold py-4 px-8 rounded-full w-50 h-20 max-w-xs text-center"
               >
                 Réserver
               </button>
